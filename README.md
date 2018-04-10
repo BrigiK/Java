@@ -12,4 +12,5 @@ A T-shirt is characterized by:
 - manufacturer
 - price
 - size
+
 The original stock is read from a text file.
