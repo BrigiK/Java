@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FurnizorPageController">
+   <children>
+      <Label layoutX="90.0" layoutY="104.0" text="Nume client: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="154.0" text="Data: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtData" layoutX="196.0" layoutY="155.0" promptText="MM/DD/YYYY" />
+      <Label layoutX="109.0" layoutY="204.0" text="Scadenta: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="254.0" text="Valoare: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMoney" layoutX="196.0" layoutY="255.0" prefHeight="25.0" prefWidth="174.0" promptText="Valoare (LEI)" />
+      <Button layoutX="283.0" layoutY="312.0" mnemonicParsing="false" onAction="#submit" text="Emite factura">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="txtScadenta" layoutX="196.0" layoutY="205.0" promptText="MM/DD/YYYY" />
+      <Label layoutX="48.0" layoutY="38.0" text="Cautare clienti" textFill="#49b1b9">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="clientCombo" layoutX="196.0" layoutY="105.0" prefHeight="25.0" prefWidth="174.0" promptText="Selecteaza un client" />
+      <Button layoutX="98.0" layoutY="312.0" mnemonicParsing="false" onAction="#signOut" text="Sign out">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblAlert" layoutX="113.0" layoutY="362.0" prefHeight="17.0" prefWidth="341.0" />
+   </children>
+</AnchorPane>

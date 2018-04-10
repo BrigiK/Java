@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddFurnizoriController">
+  <children>
+    <TableView fx:id="furnizorTable" layoutX="49.0" layoutY="47.0" prefHeight="299.0" prefWidth="507.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="47.0">
+      <columns>
+        <TableColumn fx:id="idCol" prefWidth="70.0" text="ID" />
+        <TableColumn fx:id="nameCol" prefWidth="220.0" text="Nume" />
+        <TableColumn fx:id="addressCol" prefWidth="220.0" text="Adresa" />
+       
+      </columns>
+    </TableView>
+      <Button fx:id="btnBack" layoutX="49.0" layoutY="357.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="49.0" text="Back" />
+      <Label fx:id="suma" layoutX="305.0" layoutY="342.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblUserN" layoutX="49.0" layoutY="16.0" text="Label" />
+      <Button layoutX="451.0" layoutY="357.0" mnemonicParsing="false" onAction="#addFurnizori" text="Adauga furnizori" />
+      <Label layoutX="212.0" layoutY="7.0" text="Adauga furnizori" textFill="#49b1b9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAlert" layoutX="108.0" layoutY="357.0" prefHeight="25.0" prefWidth="230.0" />
+  </children>
+</AnchorPane>

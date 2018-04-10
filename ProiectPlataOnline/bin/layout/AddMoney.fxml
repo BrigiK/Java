@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddMoneyController">
+   <children>
+      <TextField fx:id="txtAddMoney" layoutX="76.0" layoutY="138.0" promptText="Add money to balance" />
+      <Label layoutX="90.0" layoutY="110.0" text="Adauga bani in cont" />
+      <Button fx:id="btnAdd" layoutX="122.0" layoutY="191.0" mnemonicParsing="false" onAction="#AddMoney" text="Adauga" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <Label fx:id="lblCurrentBalance" layoutX="173.0" layoutY="77.0" prefHeight="17.0" prefWidth="38.0" />
+      <Label fx:id="lblName" layoutX="127.0" layoutY="50.0" text="Label" />
+      <Label fx:id="lblAlert" layoutX="48.0" layoutY="231.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label fx:id="LblUser" layoutX="21.0" layoutY="50.0" />
+   </children>
+</AnchorPane>
