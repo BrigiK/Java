@@ -1,2 +1,2 @@
-# Java
+# Online bill payment application
 The application provides a register and a log in interface. In the log in section the user can log in to the account as a client, or as a provider. The client can pay a bill, select a new provider, remove a provider, add money to the account, and log out. The provider can view its clients, create a bill for a client and log out. This application has a visual interface created with JavaFX using Scene Builder. For this project I learned to use a Relational Database Management System (MySQL), and JavaFX.
