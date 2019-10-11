@@ -8,7 +8,7 @@ public class MySQLConnection {
 	{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/plataonlinedb","root","attigirb");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/plataonlinedb","root","password");
 			return conn;
 		} catch (Exception e) {
 			System.out.println(e);
